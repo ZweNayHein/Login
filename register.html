@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Register</h1>
+    <form action="register_process.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <div id="password-strength"></div>
+
+        <label for="captcha">reCAPTCHA:</label>
+        <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+
+        <input type="submit" value="Register">
+    </form>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
